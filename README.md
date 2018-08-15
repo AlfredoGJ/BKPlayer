@@ -1,2 +1,2 @@
-# BKPlayer
+# MyPlayer
 MyPlayer 
