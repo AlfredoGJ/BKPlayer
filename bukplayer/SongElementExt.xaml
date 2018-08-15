@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="BukPlayer.SongElementExt"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BukPlayer"
+             mc:Ignorable="d" Height="39" Width="auto" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave" d:DesignWidth="508" Background="#FF1B1B1C">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="116*"/>
+            <ColumnDefinition Width="122*"/>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Title" Content="Title" HorizontalAlignment="Left" Height="32" Margin="4,5,0,0" VerticalAlignment="Top" Width="auto" Foreground="#FF28B21B" Grid.Column="3"/>
+        <Label x:Name="Artist" Content="Artist" HorizontalAlignment="Left" Height="32" Margin="2,5,0,0" VerticalAlignment="Top" Width="auto" Foreground="#FF28B21B" Grid.Column="5"/>
+        <Image x:Name="image"  HorizontalAlignment="Left" Height="32" Margin="5,3,0,0" VerticalAlignment="Top" Width="32" MouseDown="image_MouseDown" Source="Resources/play_small.png"/>
+
+        <Image x:Name="image2" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="5,2,0,0" VerticalAlignment="Top" Width="32" Source="Resources/Playlist.png" MouseDown="image2_MouseDown" />
+        <Label x:Name="track" Content="track" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="8,5,0,0" VerticalAlignment="Top" Width="33" Foreground="#FF28B21B"/>
+        <Label x:Name="Album" Content="Album" HorizontalAlignment="Left" Height="32" Margin="4,3,0,0" VerticalAlignment="Top" Width="auto" Foreground="#FF28B21B" Grid.Column="4"/>
+
+    </Grid>
+</UserControl>

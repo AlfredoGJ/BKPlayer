@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="BukPlayer.ArtistElement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BukPlayer"
+             mc:Ignorable="d" Height="auto" Width="742.113">
+    <Grid Width="auto" Height="304" >
+        <Grid Height="auto" Margin="287,45,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="auto" >
+            <Label x:Name="ArtistLabel" Content="Name of the artist" HorizontalAlignment="Left" Height="57" Margin="10,-9,-16,0" VerticalAlignment="Top" Width="324" Foreground="#FF28B21B" FontSize="21.333"/>
+            <Label x:Name="AlbumsLabel" Content="Albums:" HorizontalAlignment="Left" Height="57" Margin="10,53,0,0" VerticalAlignment="Top" Width="109" Foreground="#FF28B21B" FontSize="16"/>
+            <Label x:Name="SongsLabel" Content="Songs:" HorizontalAlignment="Left" Height="57" Margin="10,110,0,0" VerticalAlignment="Top" Width="324" Foreground="#FF28B21B" FontSize="16"/>
+            <Label x:Name="DescriptionLabel" Content="Description:" HorizontalAlignment="Left" Height="57" Margin="10,160,0,0" VerticalAlignment="Top" Width="324" Foreground="#FF28B21B" FontSize="16"/>
+            <Label x:Name="Songs" Content="0" HorizontalAlignment="Left" Height="30" Margin="94,112,0,0" VerticalAlignment="Top" Width="61" Foreground="#FF28B21B" FontSize="16"/>
+            <Label x:Name="Albums" Content="0" HorizontalAlignment="Left" Height="38" Margin="96,54,0,0" VerticalAlignment="Top" Width="63" Foreground="#FF28B21B" FontSize="16"/>
+        </Grid>
+        <Grid Name="ArtistGrid" HorizontalAlignment="Left" Height="202" Margin="22,44,0,0" VerticalAlignment="Top" Width="223" MouseEnter="Grid_MouseEnter" MouseLeave="ArtistGrid_MouseLeave" MouseDown="ArtistGrid_MouseDown">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="192" Margin="8,8,0,0" VerticalAlignment="Top" Width="213" MouseEnter="image_MouseEnter" Source="Resources/Artists.png" />
+            <Border Name="ArtistGridBorder" Width="auto" Height="auto" BorderThickness="1" BorderBrush="#FF292929"></Border>
+        </Grid>
+
+    </Grid>
+</UserControl>
