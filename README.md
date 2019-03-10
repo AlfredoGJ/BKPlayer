@@ -1,7 +1,7 @@
 # MyMusicPlayer
 MyMusicPlayer is a interactive music player created for the subject of Visual Programming, privided at the faculty of engineering of the UASLP.
 
-It offers the following functions:
+## Features ##
 
 * **Metadata support:**
 It offers ID3 v2 tags compativility, so you can read the artist, album, year, album cover, etc of a music file.
